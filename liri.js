@@ -4,10 +4,10 @@ var something = require("dotenv").config();
 var bandsintown = require('bandsintown')("liri");
 var moment = require("moment");
 // moment().format("DD/MM/YYYY"); <-- used when logging entries to the 
-// var Spotify = require('node-spotify-api');
+ //var Spotify = require('node-spotify-api');
 var keys = require("./keys.js");
 
-// var spotify = new Spotify(keys.spotify);
+ var spotify = new Spotify(keys.spotify);
 
 // Variable for query entered by the user
 var userOption = process.argv[2];
